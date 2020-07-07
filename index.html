@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web Application">
+        <meta name="keywords" content="Web, Application">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <title>Web Application</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <nav>
+            <div class="menu-icon" onclick="openClose()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="overlay">
+                <div class="overlay-content">
+                    <a href="#home">
+                    <img src="images/teleworking.png" alt="Home icon" onclick="openCloseOverlay()">
+                    <h3>Home</h3>
+                    </a>
+                    <a href="#about">
+                        <img src="images/about.png" alt="About icon" onclick="openCloseOverlay()">
+                        <h3>About</h3>
+                    </a>
+                    <a href="#contact">
+                        <img src="images/mail.png" alt="Contact icon" onclick="openCloseOverlay()">
+                        <h3>Contact</h3>
+                    </a>
+                    <hr class="scroll">
+                </div>
+            </div>
+        </nav>
+        <header id="home">
+            <div class="logo">
+                <a href="#"><img src="images/star.png" alt="Logo"></a>
+            </div>
+            <h1>Web App</h1>
+            <img src="images/www.png" alt="Logo" class="banner-img">
+            <h2>A web application is an application software that runs on a web server.</h2>
+        </header>
+        <main>
+            <section id="about">
+                <a href="#about">
+                    <img src="images/about.png" alt="About icon">
+                    <h2>About</h2>
+                    <h3>Web sites most likely to be referred to as "web applications" are those which have similar functionality to a desktop software application, or to a mobile app.</h3>
+                </a>
+                    <div class="technologies">
+                        <h3>The Core Technologies</h3>
+                        <div class="tech-figures">
+                            <figure>
+                                <img src="images/html5.png" alt="HTML">
+                                <figcaption>HTML</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/css.png" alt="CSS">
+                                <figcaption>CSS</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/js.png" alt="JS">
+                                <figcaption>JS</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/nodejs.png" alt="Node.js">
+                                <figcaption>Node.js</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/leaf.png" alt="mongoDB">
+                                <figcaption>mongoDB</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+            </section>
+            <section id="contact">
+                <a href="#contact">
+                    <img src="images/mail.png" alt="Contact icon">
+                    <h2>Contact</h2>
+                </a>
+                    <h3>Please fill up the form below to know more about.</h3>
+                    <form action="" method="POST" enctype="text/plain">
+                        <input type="text" name="fname" placeholder="First Name">
+                        <input type="text" name="lname" placeholder="Last Name">
+                        <input type="email" name="email" placeholder="email">
+                        <textarea name="message" placeholder="Your message..." id="" cols="30" rows="10"></textarea>
+                        <input type="submit">
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2020 Web Application. All rights reserved.</p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
