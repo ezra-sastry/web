@@ -152,12 +152,13 @@ input[type=button] {
 
 #snackbar {
     min-width: 250px;
+    margin-left: -125px;
     background-color: #333;
     border-radius: 2px;
     padding: 16px;
     z-index: 999;
     position: fixed;
-    left: 6%;
+    left: 50%;
     bottom: 30px;
     visibility: hidden;
 }
