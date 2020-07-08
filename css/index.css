@@ -67,7 +67,7 @@ nav {
     background-color: rgb(0,0,0);
     background-color: rgba(41, 103, 91, 1);
     position: fixed;
-    transition: 0.5s;
+    transition: 0.8s;
     overflow-y: hidden;
 }
 
@@ -139,15 +139,53 @@ header h2 {
 }
 
 input, textarea {
-    margin: 10px;
+    margin: 5px 0;
     width: 86%;
     padding: 10px;
     border: 1px solid;
     border-radius: 4px;
 }
 
-input[type=submit] {
+input[type=button] {
     width: 93%;
+}
+
+#snackbar {
+    min-width: 250px;
+    background-color: #333;
+    border-radius: 2px;
+    padding: 16px;
+    z-index: 999;
+    position: fixed;
+    left: 6%;
+    bottom: 30px;
+    visibility: hidden;
+}
+
+#snackbar.showThanks {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    form {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
 
 footer {
