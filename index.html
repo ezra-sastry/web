@@ -48,8 +48,15 @@
                 <a href="#about">
                     <img src="images/about.png" alt="About icon">
                     <h2>About</h2>
-                    <h3 class="desc">Web sites most likely to be referred to as "web applications" are those which have similar functionality to a desktop software application, or to a mobile app.</h3>
                 </a>
+                <h3 class="desc"><span id="desc-text">Web sites most likely to be referred to as "web applications" are those which have similar functionality to a desktop software application, or to a mobile app.</span>
+                    <div class="tooltip">
+                        <span onclick="copyText()" onmouseout="setCopyText()">
+                            <span class="tooltiptext" id="copyTooltip">Copy</span>
+                            <img src="images/copy.png" alt="Copy text">
+                        </span>
+                    </div>
+                </h3>
                     <div class="technologies">
                         <h3>The Core Technologies</h3>
                         <div class="tech-figures row">
