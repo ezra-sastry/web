@@ -5,6 +5,7 @@ function openClose() {
 function openCloseOverlay() {
     document.querySelector(".menu-icon").classList.toggle("change");
     document.querySelector(".overlay").classList.toggle("open");
+    closeModal();
 }
 
 function thankYou() {
