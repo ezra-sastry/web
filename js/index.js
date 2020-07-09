@@ -29,3 +29,20 @@ function setCopyText() {
     var tooltipText = document.getElementById("copyTooltip");
     tooltipText.innerHTML = "Copy";
 }
+
+var modal = document.getElementById("html5");
+
+function showModal() {
+    // document.getElementById("html5").style.display = "block";
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+    if(event.target == modal) {
+        closeModal();
+    }
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
