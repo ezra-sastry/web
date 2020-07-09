@@ -85,7 +85,7 @@ nav {
 }
 
 .overlay-content img, #about a img, #contact a img {
-    width: 22%;
+    width: 70px;
 }
 
 .overlay-content h3 {
@@ -113,7 +113,7 @@ header {
 }
 
 header .logo img {
-    width: 20%;
+    width: 64px;
 }
 
 header h2 {
@@ -123,8 +123,8 @@ header h2 {
 }
 
 .banner-img {
-    width: 71%;
-    margin-top: 51px;
+    width: 136px;
+    margin-top: 84px;
 }
 
 #about, #contact {
@@ -197,7 +197,7 @@ header h2 {
 }
 
 #about figure img {
-    width: 80%;
+    width: 60px;
 }
 
 #contact form {
