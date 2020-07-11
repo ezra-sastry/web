@@ -116,15 +116,103 @@ header .logo img {
     width: 64px;
 }
 
+.slideshow-container {
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slideshow-container img {
+    width: 200px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.captiontext {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -33px;
+    width: 100%;
+}
+
+.numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    margin-top: 30px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot-active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 header h2 {
     margin: 38px 0px;
     line-height: 1.3;
     color: aquamarine;
-}
-
-.banner-img {
-    width: 136px;
-    margin-top: 84px;
 }
 
 #about, #contact {
@@ -222,26 +310,41 @@ header h2 {
     padding: 20px 5px;
 }
 
-.closeModal {
+.close-modal-button {
     position: absolute;
     right: 3px;
     top: -5px;
     font-size: 2rem;
 }
 
-.modal-animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s;
+.zoomin {
+    -webkit-animation: in 0.6s;
+    animation: in 0.6s;
 }
 
-@-webkit-keyframes animatezoom {
+@-webkit-keyframes in {
     from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
 
-@keyframes animatezoom {
+@keyframes in {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+
+.zoomout {
+    -webkit-animation: out 0.6s;
+    animation: out 0.6s;
+}
+
+@-webkit-keyframes out {
+    from {-webkit-transform: scale(1)}
+    to {-webkit-transform: scale(0)}
+}
+
+@keyframes out {
+    from {transform: scale(1)}
+    to {transform: scale(0)}
 }
 
 #contact form {

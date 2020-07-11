@@ -8,6 +8,33 @@ function openCloseOverlay() {
     closeModal();
 }
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" dot-active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " dot-active";
+}
+
 function thankYou() {
     var x = document.querySelector("#snackbar");
     x.className = "showThanks"
@@ -34,16 +61,21 @@ function setCopyText() {
 var modal = document.getElementById("html5");
 
 function showModal() {
-    // document.getElementById("html5").style.display = "block";
+    // modal.querySelector(".modal-content").classList.remove("zoomin");
+    // modal.querySelector(".modal-content").classList.add("zoomout");
     modal.style.display = "block";
 }
 
 window.onclick = function(event) {
     if(event.target == modal) {
-        closeModal();
+        hideModal();
     }
 }
 
-function closeModal() {
+function hideModal() {
+    // modal.querySelector(".modal-content").classList.remove("zoomout");
     modal.style.display = "none";
+    // modal.querySelector(".modal-content").classList.remove("zoomin");
 }
+modal.querySelector(".modal-content").classList.add("zoomin");
+
