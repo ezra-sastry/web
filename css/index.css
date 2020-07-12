@@ -215,6 +215,30 @@ header h2 {
     color: aquamarine;
 }
 
+#up, #down {
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    background-color: red;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+#up {
+    top: 410px;
+}
+
+#down {
+    top: 450px;
+}
+
 #about, #contact {
     padding: 25px 10px 10px;
 }

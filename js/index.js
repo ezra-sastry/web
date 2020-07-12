@@ -86,3 +86,19 @@ modal.querySelector(".modal-content").classList.add("zoomin");
 //     document.querySelectorAll('.field')[0].value = '';
 // }
 
+function scrollUp() {
+    window.scrollBy(
+    {
+    top: -300,
+    behavior: 'smooth'
+  });
+  }
+
+  function scrollDown() {
+    window.scrollBy(
+    {
+    top: 400,
+    behavior: 'smooth'
+  });
+  }
+
