@@ -152,7 +152,7 @@ header .logo img {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 10px;
     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -178,8 +178,8 @@ header .logo img {
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     background-color: #bbb;
     display: inline-block;
     border-radius: 50%;
@@ -361,6 +361,21 @@ input, textarea {
 
 input[type=button] {
     width: 85%;
+}
+
+.fieldDiv {
+    position: relative;
+}
+
+.clear {
+    position: absolute;
+    top: 9px;
+    right: 23px;
+    font-size: 1.6rem;
+    padding: 0px 6px;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 #snackbar {

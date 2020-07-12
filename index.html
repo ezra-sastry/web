@@ -49,12 +49,12 @@
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="images/web-page.png" alt="Web">
-                    <div class="captiontext">Videos</div>
+                    <div class="captiontext">Vide0s</div>
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="images/browser.png" alt="Web">
-                    <div class="captiontext">And more...</div>
+                    <div class="captiontext">And More...</div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -125,11 +125,22 @@
                 </a>
                     <h3>Please fill up the form below to know more about.</h3>
                     <form action="" method="POST" enctype="text/plain">
-                        <input type="text" name="fname" placeholder="First Name">
-                        <input type="text" name="lname" placeholder="Last Name">
-                        <input type="email" name="email" placeholder="email">
+                        <div class="fieldDiv">
+                            <input type="text" name="fname" class="field" placeholder="First Name" autocomplete="off">
+                            <button type="button" class="clear" onclick="document.querySelectorAll('.field')[0].value=''">&times;</button>
+                        </div>
+                        <div class="fieldDiv">
+                            <input type="text" name="lname" class="field" placeholder="Last Name" autocomplete="off">
+                            <button type="button" class="clear" onclick="document.querySelectorAll('.field')[1].value=''">&times;</button>
+                        </div>
+                        <div class="fieldDiv">
+                            <input type="email" name="email" class="field" placeholder="email" autocomplete="off">
+                            <button type="button" class="clear" onclick="document.querySelectorAll('.field')[2].value=''">&times;</button>
+                        </div>
+                        
+                        
                         <textarea name="message" placeholder="Your message..." id="" cols="30" rows="10"></textarea>
-                    <input type="button" value="Submit" onclick="thankYou()">
+                        <input type="button" value="Submit" onclick="thankYou()">
                     </form>
                     <div id="snackbar">Thank you!</div>
             </section>

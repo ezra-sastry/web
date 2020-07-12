@@ -79,3 +79,10 @@ function hideModal() {
 }
 modal.querySelector(".modal-content").classList.add("zoomin");
 
+// function clearInput(x) {
+//     x = x.previousSibling.value;
+//     x = x[0].value;
+//     console.log(x);
+//     document.querySelectorAll('.field')[0].value = '';
+// }
+
