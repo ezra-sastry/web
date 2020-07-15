@@ -89,7 +89,7 @@ modal.querySelector(".modal-content").classList.add("zoomin");
 function scrollUp() {
     window.scrollBy(
     {
-    top: -300,
+    top: -250,
     behavior: 'smooth'
   });
   }
@@ -97,7 +97,7 @@ function scrollUp() {
   function scrollDown() {
     window.scrollBy(
     {
-    top: 400,
+    top: 250,
     behavior: 'smooth'
   });
   }
