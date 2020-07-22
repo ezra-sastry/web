@@ -51,7 +51,7 @@
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="images/web-page.png" alt="Web">
-                    <div class="captiontext">Vide0s</div>
+                    <div class="captiontext">Videos</div>
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
@@ -126,7 +126,7 @@
                     <h2>Contact</h2>
                 </a>
                     <h3>Please fill up the form below to know more about.</h3>
-                    <form action="" method="POST" enctype="text/plain">
+                    <form action="/" method="POST">
                         <div class="fieldDiv">
                             <input type="text" name="fname" class="field" placeholder="First Name" autocomplete="off">
                             <button type="button" class="clear" onclick="document.querySelectorAll('.field')[0].value=''">&times;</button>
@@ -139,10 +139,8 @@
                             <input type="email" name="email" class="field" placeholder="email" autocomplete="off">
                             <button type="button" class="clear" onclick="document.querySelectorAll('.field')[2].value=''">&times;</button>
                         </div>
-                        
-                        
                         <textarea name="message" placeholder="Your message..." id="" cols="30" rows="10"></textarea>
-                        <input type="button" value="Submit" onclick="thankYou()">
+                        <input type="submit" value="Submit" onclick="thankYou()">
                     </form>
                     <div id="snackbar">Thank you!</div>
             </section>
